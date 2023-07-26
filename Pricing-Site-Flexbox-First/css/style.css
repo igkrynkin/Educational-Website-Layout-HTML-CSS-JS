@@ -1,3 +1,5 @@
+/* ---=== NORMALIZE CSS ===--- */
+
 html {
     box-sizing: border-box; /* Будет работать для всех элементов сайта */
 }
@@ -6,6 +8,16 @@ html {
      block-size: inherit; /* Нужно для наследования стилей при подключения сторонней библиотеки */
 }
 
-.container {
-    border: 1px solid #000;
+a {
+    color: inherit;
+    text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+}
+
+
+/* .container {
+    border: 1px solid #000;
+} */
