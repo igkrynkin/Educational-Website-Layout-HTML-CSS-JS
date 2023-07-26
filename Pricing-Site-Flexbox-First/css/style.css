@@ -1,0 +1,11 @@
+html {
+    box-sizing: border-box; /* Будет работать для всех элементов сайта */
+}
+
+*, ::after, ::before {
+     block-size: inherit; /* Нужно для наследования стилей при подключения сторонней библиотеки */
+}
+
+.container {
+    border: 1px solid #000;
+}
