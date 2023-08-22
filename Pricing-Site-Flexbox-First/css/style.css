@@ -70,18 +70,21 @@ html {
 
 .menu {
     width: 60%;
+    
 }
 
 .menu ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    font-size: 1.6rem; 
   }
 
 .menu-link {
     color: #fff;
     text-decoration: none;
 }
+
 
 .get-started-btn {
     margin-left: 60px;
@@ -97,6 +100,10 @@ html {
     text-align: center;
 }
 
+.main-text p {
+    font-size: 1.6rem;
+}
+
 .main-text span {
     display: inline-block;
 }
@@ -104,6 +111,11 @@ html {
 .main-text h1 {
     margin: 0.5rem;
     font-size: 80px;
+}
+
+.main-text span {
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .main-text span::after {
@@ -115,6 +127,7 @@ html {
     vertical-align: middle;
     margin-left: 10px;
 }
+
 
 .main-text span::before {
     content: '';
@@ -195,3 +208,13 @@ html {
     font-size: 6rem;
     margin: 0;
 }
+
+.price-tags {
+    display: flex;
+}
+
+.price-tag {
+    border: 1px solid red;
+    font-size: 1.6rem;
+}
+
