@@ -125,13 +125,64 @@ html {
     text-decoration: none;
 }
 
+                                                                 /* ---=== BUTTON MAIN MENU START ===--- */
+
+.menu-link-btn {
+    padding: 15px;
+    position:relative;
+}
+
+.menu-link-btn::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background : #fff;
+    left: 50%;
+    height: 2px;
+    bottom: 0;
+    transition: all .3s;
+    opacity: 0.7;
+}
+
+.menu-link-btn:hover::before {
+    width: 100%;
+    left:0;
+}
+
+
+
+                                                            /* ---=== BUTTON MAIN MENU END ===--- */
 
 .get-started-btn {
+    display: inline-block;
+    position:relative;
     margin-left: 6rem;
     border: 1px solid #fff;
     padding: 10px 20px;
-    border-radius: 100px;
     text-transform: uppercase;
+    border-radius: 100px;
+    overflow:hidden;
+}
+
+.get-started-btn::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background : #fff;
+    left: 0;
+    bottom: 0;
+    transition: all .3s;
+    opacity: 0.5;
+}
+
+.get-started-btn:hover::before {
+    color: #6e45e2;
+    height: 100%; 
+}
+
+.get-started-btn:hover::before a {
+    color: #6e45e2; 
 }
 
 .main-text {
@@ -413,28 +464,60 @@ html {
     list-style: none;
 }
 
+                                                           /* ---=== FOOTER MENU LINK BUTTON START ===--- */
+
 .footer-menu-link {
     font-size: 1.4rem;
     text-decoration: none;
     color: #6a6a77;
     font-weight: 500;
+    -webkit-text-shadow: 1px 1px 1px rgba(106,  106,  119, 0.3);
+    -moz-text-shadow: 1px 1px 1px rgba(106,  106,  119, 0.3);
+    text-shadow: 1px 1px 1px rgba(106,  106,  119, 0.3);
+    transition: 0.5s;
 }
+
+                                                           
+
+.footer-menu-link:hover {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #6e45e2;
+    -webkit-text-shadow: 1px 1px 1px rgba(106,  106,  119, 0.1);
+    -moz-text-shadow: 1px 1px 1px rgba(106,  106,  119, 0.1);
+    text-shadow: 1px 1px 1px rgba(106,  106,  119, 0.1);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+                                                            /* ---=== FOOTER MENU LINK BUTTON FINISH ===--- */
 
 .footer-get-started {
     margin-left: 6rem;
-    border: 1px solid #fff;
     background-color: #6e45e2;
     color: #fff;
     padding: 10px 20px;
     border-radius: 100px;
     text-transform: uppercase;
+    /* transition: 0.1ms; */
 }
+
+.footer-get-started:hover {
+    margin-left: 6rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 1px rgba(204, 204, 223, 0.6);
+    color: #c2c9db;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+
 
 .line {
     display: block;
     width: 90%;
     height: 1px;
-    background-color: #333;
+    background-color: #f2f2f3;
     margin: 1rem auto;
 }
 
