@@ -15,7 +15,7 @@
 } */
 
 
-/* ---=== НАЧАЛО СТЕЛИЗАЦИИ СКРОЛБАРА ===--- */
+                                                            /* ---=== НАЧАЛО СТЕЛИЗАЦИИ СКРОЛБАРА ===--- */
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -39,6 +39,7 @@
 /* ---=== КОНЕЦ СТЕЛИЗАЦИИ СКРОЛБАРА ===--- */
 
 
+                                                                /* ---=== ОБЩИЕ СТИЛИ СТАРТ ===--- */
 
 *, *::before, *::after {
     block-size: border-box;
@@ -69,6 +70,12 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* ---=== ОБЩИЕ СТИЛИ КОНЕЦ ===--- */
+
+
+                                            /* ---=== ОСНОВНОЙ БЛОК, ШАПКА, ФОНОВАЯ КАРТИНКА, ГРАДИЕНТ, ЛОГОТИП СТАРТ ===--- */
+
 .main {
     color: #fff;
     display: flex;
@@ -78,7 +85,8 @@ html {
     align-items: center;
     min-height: 600px;
     background: url(../img/main-bg.jpg) no-repeat center;
-    block-size: cover;
+    /* block-size: cover; */
+    background-size:cover;
     position: relative;
   }
   
@@ -97,6 +105,11 @@ html {
 .logo img {
     width: 100%;
 }
+
+
+/* ---=== ОСНОВНОЙ БЛОК, ШАПКА, ФОНОВАЯ КАРТИНКА, ГРАДИЕНТ, ЛОГОТИП ФИНИШ ===--- */
+
+                                                        /* ---=== ОСНОВНОЙ БЛОК, ШАПКА, МЕНЮ ФИНИШ ===--- */
 
 .header {
     display: flex;
@@ -125,6 +138,8 @@ html {
     text-decoration: none;
 }
 
+                                                                /* ---=== ОСНОВНОЙ БЛОК, ШАПКА, МЕНЮ ФИНИШ ===--- */
+
                                                                  /* ---=== BUTTON MAIN MENU START ===--- */
 
 .menu-link-btn {
@@ -151,7 +166,7 @@ html {
 
 
 
-                                                            /* ---=== BUTTON MAIN MENU END ===--- */
+ /* ---=== BUTTON MAIN MENU END ===--- */
 
 .get-started-btn {
     display: inline-block;
@@ -530,4 +545,48 @@ html {
     font-size: 1.4rem;
     display: inline-block;
     margin-right: 1rem;
+}
+
+.m-menu-link {
+    display: none;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.m-menu {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+    font-size: 3rem;
+    line-height: 3;
+    background-color: #6e45e2;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* transition: 0.2s;
+    transform: translateX(-100%); */
+}
+
+.m-menu__active {
+
+}
+
+.close-menu {
+    position: fixed;
+    right: 5rem;
+    font-size: 5rem;
+    top: 5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.close-menu:hover {
+    cursor: pointer;
 }
