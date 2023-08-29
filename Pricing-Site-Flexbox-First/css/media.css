@@ -1,23 +1,23 @@
 @media (max-width: 1250px) {
-    html {
-        font-size: 8px;
-    }
+  html {
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 1090px) {
-    html {
-        font-size: 7px;
-    }
+  html {
+    font-size: 7px;
+  }
 }
 
 .visible-lg {
-    display: none;
+  display: none;
 }
 
 .m-menu-link {
-    display: block;
+  display: block;
 }
 
 .get-started-btn {
-    margin: 0;
+  margin: 0;
 }
