@@ -503,6 +503,7 @@ html {
 
 .footer-get-started {
   margin-left: 6rem;
+  bottom: none;
   background-color: #6e45e2;
   color: #fff;
   padding: 10px 20px;
@@ -572,8 +573,8 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* transition: 0.2s;
-    transform: translateX(-100%); */
+  transition: 0.3s;
+  transform: translateX(100%); 
 }
 
 .m-menu__active {
@@ -584,7 +585,7 @@ html {
   position: fixed;
   right: 5rem;
   font-size: 5rem;
-  top: 5rem;
+  top: 0;
   font-weight: 900;
   color: #fff;
 }

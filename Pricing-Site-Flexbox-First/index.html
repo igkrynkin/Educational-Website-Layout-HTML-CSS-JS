@@ -18,6 +18,7 @@
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
   <body>
     <ul class="m-menu">
@@ -41,7 +42,17 @@
           ></iconify-icon>
         </a>
 
-        <div class="menu visible-lg"></div>
+        <div class="menu visible-lg">
+          <ul>
+            <li class="close-menu">&times;</li>
+            <li><a href="#" class="menu-link menu-link-btn">Home</a></li>
+            <li><a href="#" class="menu-link menu-link-btn">Why MISCOCIAL</a></li>
+            <li><a href="#" class="menu-link menu-link-btn">Features</a></li>
+            <li><a href="#" class="menu-link menu-link-btn">Articles</a></li>
+            <li><a href="#" class="menu-link menu-link-btn">Pricing</a></li>
+            <li><a href="#" class="get-started-btn menu-link">get started</a></li>
+          </ul>
+        </div>
       </div>
       <div class="main-text">
         <span> social marketing & analytics</span>
@@ -147,49 +158,39 @@
         <a href="#"
           ><iconify-icon
             icon="line-md:facebook"
-            width="17"
-            height="17"
           ></iconify-icon
         ></a>
         <a href="#"
           ><iconify-icon
             icon="line-md:twitter-twotone"
-            width="17"
-            height="17"
           ></iconify-icon
         ></a>
         <a href="#"
           ><iconify-icon
             icon="entypo-social:google"
-            width="17"
-            height="17"
           ></iconify-icon
         ></a>
         <a href="#"
           ><iconify-icon
             icon="line-md:instagram"
-            width="17"
-            height="17"
           ></iconify-icon
         ></a>
       </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script>
-      $(function) {
-          var link = $('.m-menu-link');
-          var close = $('.close-menu');
-          var menu = $('.m-menu');
-          link.on('click', function(event) {
-            event.preventDefault();
-            menu.toggleClass('m-menu__active');
-          });
-          close.on('click', function(event) {
-            event.preventDefault();
-            menu.toggleClass('m-menu active');
-          });
-        }
+      $(function () {
+        var link = $(".m-menu-link");
+        var close = $(".close-menu");
+        var menu = $(".m-menu");
+        link.on("click", function (event) {
+          event.preventDefault();
+          menu.toggleClass("m-menu__active");
+        });
+        close.on("click", function (event) {
+          event.preventDefault();
+          menu.toggleClass("m-menu__active");
+        });
+      });
     </script>
   </body>
 </html>
