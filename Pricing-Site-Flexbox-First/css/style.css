@@ -81,7 +81,6 @@ html {
   align-items: center;
   min-height: 600px;
   background: url(../img/main-bg.jpg) no-repeat center;
-  /* block-size: cover; */
   background-size: cover;
   position: relative;
 }
@@ -330,6 +329,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /* padding-right: 6rem; */
 }
 
 .price-tag {
