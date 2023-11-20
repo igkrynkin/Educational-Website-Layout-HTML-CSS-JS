@@ -20,6 +20,6 @@ function open(evt){
     });
 
     tabTarget.classList.add('tabs__btn-item--active');
-    document.querySelector('#${button}').classList.add('tabs__content-item--active');
+    document.querySelector(`#${button}`).classList.add('tabs__content-item--active');
 
 }
