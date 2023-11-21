@@ -321,3 +321,16 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
   margin-top: auto;
 }
+
+.buy {
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.buy__img {
+  margin-bottom: 30px;
+}
+
+.buy .buy-btn {
+  margin: 0 auto;
+}
