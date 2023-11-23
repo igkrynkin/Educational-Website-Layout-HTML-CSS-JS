@@ -325,6 +325,7 @@ background-clip: text;
 .buy {
   margin-bottom: 110px;
   text-align: center;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -345,8 +346,8 @@ background-clip: text;
 
 /* H00 */
 font-weight: 700;
-font-size: 400px;
-line-height: 400px;
+font-size: 380px;
+line-height: 380px;
 position: absolute;
 z-index: -1;
 animation: line-text 6s linear 1s infinite;
@@ -390,4 +391,13 @@ background-clip: text;
 font-size: 36px;
 line-height: 50px;
 text-transform: uppercase;
+}
+
+.equipment__box-item--one {
+  grid-row: 1/-1;
+}
+
+.promo{
+  margin-bottom: 100px;
+  background-image: url(images/promo.jpg);
 }
