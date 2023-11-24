@@ -393,11 +393,23 @@ line-height: 50px;
 text-transform: uppercase;
 }
 
-.equipment__box-item--one {
+.equipment__box-item--one{
   grid-row: 1/-1;
 }
 
 .promo{
   margin-bottom: 100px;
-  background-image: url(images/promo.jpg);
+}
+
+.promo__inner{
+  background-image: url(../images/promo.jpg);
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.promo__btn{
+  
 }
